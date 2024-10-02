@@ -13,7 +13,7 @@ Ensure you have already installed third-party software:
 
 ### Step 1:
 
-Config information before using 3rd software to mount. See [rclone.config.example](rclone/rclone.config.example), [s3fs-passwd.example](rclone/s3fs-passwd.example), etc.
+Config information before using 3rd software to mount. See [rclone.config.example](rclone/rclone.config.example), [s3fs-passwd.example](s3fs/s3fs-passwd.example), etc.
 
 ### Step 2:
 
