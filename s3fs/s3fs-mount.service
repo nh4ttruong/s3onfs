@@ -1,0 +1,15 @@
+[Unit]
+Description=s3fs mount
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/s3fs-mount.sh mount
+ExecStop=/usr/local/bin/s3fs-mount.sh umount
+ExecRestart=/usr/local/bin/s3fs-mount.sh remount
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+[Unit]
+Description=rclone mount
+Requires=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+RemainAfterExit=yes
+ExecStart=/usr/local/bin/rclone-mount.sh mount
+ExecStop=/usr/local/bin/rclone-mount.sh umount
+ExecRestart=/usr/local/bin/rclone-mount.sh remount
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

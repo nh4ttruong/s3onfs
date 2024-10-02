@@ -1,0 +1,11 @@
+[vstorage]
+type = s3
+provider = Other
+env_auth = false
+access_key_id = xxx
+secret_access_key = xxx
+endpoint = <ENDPOINT_URL>
+acl = private
+v2_auth = true
+region = other-v2-signature
+location_constraint = <REGION>
